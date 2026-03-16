@@ -1,0 +1,6 @@
+export { default as IconUnity } from "./IconUnity"
+export { default as IconGithub } from "./IconGithub"
+export { default as IconYoutube } from "./IconYoutube"
+export { default as IconLinkedin } from "./IconLinkedin"
+export { default as IconArtstation } from "./IconArtstation"
+export { default as IconDocument } from "./IconDocument"
