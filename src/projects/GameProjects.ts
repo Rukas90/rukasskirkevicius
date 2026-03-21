@@ -16,8 +16,8 @@ export const ForsakenDawnProject: Project = {
     {
       type: "ProjectRole",
       info: {
-        localeKey: "forsaken_dawn_role_info",
-        fallback: "Solo game developer",
+        localeKey: "solo_developer",
+        fallback: "Solo developer",
       },
     },
     {
@@ -33,7 +33,7 @@ export const ForsakenDawnProject: Project = {
       info: "PC",
     },
     {
-      type: "KeySoftware",
+      type: "TechStack",
       info: "Unity, C#, Blender, Adobe Substance 3D Painter, Rider",
     },
   ],
@@ -61,16 +61,16 @@ export const HauntedProject: Project = {
     {
       type: "ProjectRole",
       info: {
-        localeKey: "forsaken_dawn_role_info",
-        fallback: "Solo game developer",
+        localeKey: "solo_developer",
+        fallback: "Solo developer",
       },
     },
     {
       type: "Responsibilities",
       info: {
-        localeKey: "forsaken_dawn_responsibilities",
+        localeKey: "haunted_responsibilities",
         fallback:
-          "During this two weeks long project, I have worked on implementing a 3D zombie shooter game prototype. The entire project was made from stratch, which included, gameplay functionality, graphical design, UI/UX, audio and profiling and building.",
+          "During this two-week university project, I built a 3D zombie shooter prototype from scratch, covering gameplay, UI/UX, audio, and optimization through to final build.",
       },
     },
     {
@@ -78,7 +78,7 @@ export const HauntedProject: Project = {
       info: "PC",
     },
     {
-      type: "KeySoftware",
+      type: "TechStack",
       info: "Unity, C#, Blender, Adobe Substance 3D Painter, Visual Studio",
     },
   ],
@@ -106,16 +106,16 @@ export const Lua2DGameProject: Project = {
     {
       type: "ProjectRole",
       info: {
-        localeKey: "forsaken_dawn_role_info",
-        fallback: "Solo game developer",
+        localeKey: "solo_developer",
+        fallback: "Solo developer",
       },
     },
     {
       type: "Responsibilities",
       info: {
-        localeKey: "forsaken_dawn_responsibilities",
+        localeKey: "lua_game_responsibilities",
         fallback:
-          "As a solo developer, I am responsible for the full development of the project, covering both technical and artistic aspects.\nThis includes implementing core gameplay systems, AI behavior, and player mechanics, as well as developing tools and systems for efficient content creation.\nI also handle 3D asset creation, level design, UI systems, and overall project architecture.",
+          "A 2D RPG shooter built in a weekend using Lua and LÖVE2D. Implemented core gameplay, level design, and sourced/created 2D assets.",
       },
     },
     {

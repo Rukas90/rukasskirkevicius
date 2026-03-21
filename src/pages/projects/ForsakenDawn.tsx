@@ -1,51 +1,23 @@
-import { Line, ListPlain, TextLocalized, TextPlain } from "@components"
-import ProjectDetail from "@components/ProjectDetail"
+import { Line, ListPlain, ProjectHero, TextPlain } from "@components"
 import Slideshow from "@components/Slideshow"
 import { ForsakenDawnProject } from "@projects"
 
 const ForsakenDawn = () => {
-  const { title, subtitle, details, startDate } = ForsakenDawnProject
-
   return (
     <div>
-      <div className="inline-flex gap-8">
-        <Slideshow
-          paths={[
-            "/img/projects/forsaken-dawn/banner",
-            "/img/projects/forsaken-dawn/gas-station-interior-gs-1",
-            "/img/projects/forsaken-dawn/camper-interior-gs-1",
-          ]}
-          className="h-96 w-250"
-        />
-        <div>
-          <TextLocalized
-            text={title}
-            as="p"
-            className="text-4xl font-medium text-stone-800"
+      <ProjectHero
+        media={
+          <Slideshow
+            paths={[
+              "/img/projects/forsaken-dawn/banner",
+              "/img/projects/forsaken-dawn/gas-station-interior-gs-1",
+              "/img/projects/forsaken-dawn/camper-interior-gs-1",
+            ]}
+            className="w-full h-full"
           />
-          <TextLocalized text={subtitle} className="text-stone-600 text-lg" />
-          <Line overridesColor className="bg-stone-200 my-3" />
-          <div className="flex flex-col gap-2.5">
-            {startDate && (
-              <ProjectDetail
-                detail={{
-                  type: "ProjectStarted",
-                  info: startDate.getFullYear().toString(),
-                }}
-              />
-            )}
-            <ProjectDetail
-              detail={{
-                type: "ProjectStatus",
-                info: "Ongoing",
-              }}
-            />
-            {details.map((detail) => (
-              <ProjectDetail detail={detail} />
-            ))}
-          </div>
-        </div>
-      </div>
+        }
+        {...ForsakenDawnProject}
+      />
       <p className="mt-6 text-xl mb-2">Summary</p>
       <TextPlain>
         Forsaken Dawn is an open-world survival horror set in a nuclear winter

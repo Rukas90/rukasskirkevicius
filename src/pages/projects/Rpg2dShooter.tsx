@@ -1,9 +1,8 @@
 import {
-  Line,
   ListPlain,
+  ProjectHero,
   ProjectSectionText,
   TextLinkMarker,
-  TextLocalized,
   TextPlain,
 } from "@components"
 import ProjectDetail from "@components/ProjectDetail"
@@ -11,35 +10,30 @@ import { Lua2DGameProject } from "@projects"
 import YouTube from "react-youtube"
 
 const Rpg2dShooter = () => {
-  const { title, subtitle, details, startDate } = Lua2DGameProject
+  const { startDate } = Lua2DGameProject
 
   return (
     <div>
-      <div className="inline-flex gap-8">
-        <YouTube videoId="PqZmD-KcNGc" className="h-96 w-250" />
-        <div>
-          <TextLocalized
-            text={title}
-            as="p"
-            className="text-4xl font-medium text-stone-800"
+      <ProjectHero
+        media={
+          <YouTube
+            videoId="PqZmD-KcNGc"
+            className="w-full h-full"
+            iframeClassName="w-full h-full"
           />
-          <TextLocalized text={subtitle} className="text-stone-600 text-lg" />
-          <Line overridesColor className="bg-stone-200 my-3" />
-          <div className="flex flex-col gap-2.5">
-            {startDate && (
-              <ProjectDetail
-                detail={{
-                  type: "ProjectDate",
-                  info: startDate.getFullYear().toString(),
-                }}
-              />
-            )}
-            {details.map((detail) => (
-              <ProjectDetail detail={detail} />
-            ))}
-          </div>
-        </div>
-      </div>
+        }
+        {...Lua2DGameProject}
+        extraDetails={
+          startDate && (
+            <ProjectDetail
+              detail={{
+                type: "ProjectDate",
+                info: startDate.getFullYear().toString(),
+              }}
+            />
+          )
+        }
+      />
       <ProjectSectionText>Summary</ProjectSectionText>
       <TextPlain>
         This was an experimentational, hobby project, where I made an RPG 2D

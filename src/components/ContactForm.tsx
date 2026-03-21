@@ -3,6 +3,8 @@ import HCaptcha from "@hcaptcha/react-hcaptcha"
 import { useRef } from "react"
 import { useTranslation } from "react-i18next"
 
+const ACCESS_TOKEN = import.meta.env.VITE_CONTACT_ACCESS_KEY
+
 interface ContactFormProps {
   onSuccess?: () => void
   onError?: (error: string) => void
@@ -21,7 +23,7 @@ const ContactForm = ({ onSuccess, onError }: ContactFormProps) => {
       return
     }
     const form = new FormData(e.target)
-    form.append("access_key", "89db6cba-63c3-4514-901c-703de1b40650")
+    form.append("access_key", ACCESS_TOKEN)
 
     const data = Object.fromEntries(form)
 

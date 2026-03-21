@@ -1,8 +1,7 @@
 import {
-  Line,
   ListPlain,
+  ProjectHero,
   ProjectSectionText,
-  TextLocalized,
   TextPlain,
 } from "@components"
 import ProjectDetail from "@components/ProjectDetail"
@@ -11,35 +10,30 @@ import { HauntedProject } from "@projects"
 import YouTube from "react-youtube"
 
 const Haunted = () => {
-  const { title, subtitle, details, startDate } = HauntedProject
+  const { startDate } = HauntedProject
 
   return (
     <div>
-      <div className="inline-flex gap-8">
-        <YouTube videoId="d8JEaiMXldY" className="h-96 w-250" />
-        <div>
-          <TextLocalized
-            text={title}
-            as="p"
-            className="text-4xl font-medium text-stone-800"
+      <ProjectHero
+        media={
+          <YouTube
+            videoId="d8JEaiMXldY"
+            className="w-full h-full"
+            iframeClassName="w-full h-full"
           />
-          <TextLocalized text={subtitle} className="text-stone-600 text-lg" />
-          <Line overridesColor className="bg-stone-200 my-3" />
-          <div className="flex flex-col gap-2.5">
-            {startDate && (
-              <ProjectDetail
-                detail={{
-                  type: "ProjectDate",
-                  info: startDate.getFullYear().toString(),
-                }}
-              />
-            )}
-            {details.map((detail) => (
-              <ProjectDetail detail={detail} />
-            ))}
-          </div>
-        </div>
-      </div>
+        }
+        {...HauntedProject}
+        extraDetails={
+          startDate && (
+            <ProjectDetail
+              detail={{
+                type: "ProjectDate",
+                info: startDate.getFullYear().toString(),
+              }}
+            />
+          )
+        }
+      />
       <ProjectSectionText>Summary</ProjectSectionText>
       <TextPlain>
         This project was part of an assignment to create a prototype game. I
@@ -63,7 +57,7 @@ const Haunted = () => {
         <li>Map with objectives and an ending</li>
       </ListPlain>
       <ProjectSectionText>UI Design</ProjectSectionText>
-      <div className="inline-flex gap-8">
+      <div className="flex lg:flex-row flex-col gap-8">
         <p>
           <TextPlain>
             When working on the user interface, the idea was to create a clean,
@@ -78,7 +72,7 @@ const Haunted = () => {
           </TextPlain>
         </p>
         <Slideshow
-          className="h-96 w-250"
+          className="h-96 lg:w-250 w-full aspect-2/3"
           paths={{
             directory: "/img/projects/haunted",
             fileNames: [

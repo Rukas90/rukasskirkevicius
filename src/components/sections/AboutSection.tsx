@@ -30,7 +30,7 @@ const AboutSection = () => {
               i18n={i18n}
               i18nKey="about_parag_5"
               components={{
-                GameLink: <TextLinkMarker to="/games/forsaken-dawn" />,
+                GameLink: <TextLinkMarker to="/projects/forsaken-dawn" />,
               }}
             />
           </TextPlain>

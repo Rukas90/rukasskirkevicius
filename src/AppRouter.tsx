@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom"
 import BasePage from "./pages/BasePage"
 
 const Home = lazy(() => import("./pages/Home"))
-const GamePage = lazy(() => import("./pages/GamePage"))
+const GamePage = lazy(() => import("./pages/projects/GamePage"))
 const GraphicsPage = lazy(() => import("./pages/GraphicsPage"))
 const ProjectsPage = lazy(() => import("./pages/ProjectsPage"))
 const ForsakenDawn = lazy(() => import("./pages/projects/ForsakenDawn"))

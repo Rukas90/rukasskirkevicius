@@ -20,7 +20,7 @@ export const PixelHarmonyProject: Project = {
       info: {
         localeKey: "pixel_harmony_responsibilities",
         fallback:
-          "During this project I have worked and created an editor tool in Unity, that provides advanced image editing features, similar to software like Photoshop. I have worked on this project from stratch, implementing the user interface, functionality and ultimately published to be sold on the Unity AssetStore.",
+          "A fully-featured image editing Unity editor program published on the Unity Asset Store. Built from scratch covering UI, rendering pipeline via HLSL shaders, 55+ filters and adjustments, a custom brush engine, pixel art tools, special pbr generation filters, layering system, and much more. All optimized using GPU processing via Pixel and Compute shaders, in combination to Job + Burst.",
       },
     },
     {
@@ -44,16 +44,20 @@ export const LocalizationProject: Project = {
   },
   title: "Localization",
   subtitle: {
-    localeKey: "pixel_harmony_sub",
+    localeKey: "localization_sub",
     fallback: "Custom localization solution and editor management tool",
   },
   details: [
     {
+      type: "PartOf",
+      info: "Forsaken Dawn",
+    },
+    {
       type: "Responsibilities",
       info: {
-        localeKey: "pixel_harmony_responsibilities",
+        localeKey: "localization_responsibilities",
         fallback:
-          "During this project I have worked and created an editor tool in Unity, that provides advanced image editing features, similar to software like Photoshop. I have worked on this project from stratch, implementing the user interface, functionality and ultimately published to be sold on the Unity AssetStore.",
+          "A custom localization system built for Forsaken Dawn, featuring a dedicated Unity editor tool for managing translation entries across multiple languages, with group-based organization, per-locale font references, and Addressable asset streaming.",
       },
     },
     {
