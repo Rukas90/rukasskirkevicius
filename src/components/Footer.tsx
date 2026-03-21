@@ -1,6 +1,4 @@
-import ContentContainer from "./containers/ContentContainer"
-import LanguagePicker from "./LanguagePicker"
-import { Line, Trademark } from "@components"
+import { ContentContainer, LanguagePicker, Line, Trademark } from "@components"
 import SocialRibbon from "./SocialRibbon"
 
 const Footer = () => {

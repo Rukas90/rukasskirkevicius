@@ -31,5 +31,12 @@
     "enter_your_name": "Įveskite savo vardą",
     "enter_your_email": "Įveskite savo el. pašto adresą",
     "enter_your_message": "Įveskite savo žinutę",
-    "send": "Siųsti"
+    "send": "Siųsti",
+    "games": "Žaidimai",
+    "not_found": "Nerasta",
+    "go_home": "Grįžti namo",
+    "back_to_games": "Atgal į žaidimus",
+    "filter_by": "Filtruoti pagal",
+    "all": "Visi",
+    "software": "Programos"
 }

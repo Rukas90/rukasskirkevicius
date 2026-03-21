@@ -8,7 +8,7 @@ const ButtonSubmit = ({
     <button
       className={clsx(
         className,
-        "bg-stone-700 hover:bg-stone-800 transition-colors cursor-pointer text-stone-100 px-5 py-2.5 rounded-md",
+        "bg-stone-800 hover:bg-stone-900 transition-colors cursor-pointer text-stone-100 px-5 py-2.5 rounded-md",
       )}
     >
       {children}

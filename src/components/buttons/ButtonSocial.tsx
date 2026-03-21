@@ -33,7 +33,6 @@ interface ButtonSocialProps extends Omit<
   social: Social
 }
 const ButtonSocial = ({ social, className, ...props }: ButtonSocialProps) => {
-  console.log(className)
   return (
     <Link to={Urls[social]} target="_blank" className="flex">
       <ButtonIcon

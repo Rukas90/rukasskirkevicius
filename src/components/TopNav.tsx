@@ -22,8 +22,6 @@ const TopNav = () => {
         <ul className="flex gap-6 justify-center text-sm uppercase">
           <NavItem to="/">{t("home")}</NavItem>
           <NavItem to="/projects">{t("projects")}</NavItem>
-          <NavItem to="/systems">{t("systems")}</NavItem>
-          <NavItem to="/tools">{t("tools")}</NavItem>
           <NavItem to="/graphics">{t("graphics")}</NavItem>
           <NavItem to="/tutorials">{t("tutorials")}</NavItem>
           <NavItem to="/contact">{t("contact")}</NavItem>

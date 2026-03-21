@@ -1,5 +1,6 @@
 export { default as Footer } from "./Footer"
 export { default as TopNav } from "./TopNav"
+export { default as ProjectEntry } from "./ProjectEntry"
 export * from "./icons"
 export * from "./buttons"
 export * from "./sections"

@@ -31,5 +31,12 @@
     "enter_your_name": "Enter your name",
     "enter_your_email": "Enter your email",
     "enter_your_message": "Enter your message",
-    "send": "Send"
+    "send": "Send",
+    "games": "Games",
+    "not_found": "Not Found",
+    "go_home": "Go Home",
+    "back_to_games": "Back to Games",
+    "filter_by": "Filter by",
+    "all": "All",
+    "software": "Software"
 }

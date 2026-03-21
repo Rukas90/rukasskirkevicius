@@ -1,9 +1,10 @@
-import { AboutSection, SkillsSection } from "@components"
+import { AboutSection, EducationSection, SkillsSection } from "@components"
 
 const Home = () => {
   return (
     <div>
       <AboutSection />
+      <EducationSection />
       <SkillsSection />
     </div>
   )

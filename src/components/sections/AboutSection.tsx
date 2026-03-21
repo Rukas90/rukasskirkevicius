@@ -8,8 +8,8 @@ const AboutSection = () => {
   return (
     <SectionContainer>
       <SectionText>{t("about_me")}</SectionText>
-      <div className="inline-flex gap-9">
-        <Logo className="relative w-34 min-w-34 h-52 rounded-xl opacity-95 skew shine" />
+      <div className="flex md:flex-row flex-col gap-9">
+        <Logo className="relative md:w-34 w-full min-w-34 h-52 rounded-xl opacity-95 skew shine" />
         <p className="flex flex-col leading-7 break-after-column wrap-normal overflow-hidden justify-center text-justify">
           <TextPlain className="font-normal! mb-2">
             {t("about_parag_1")}
@@ -30,7 +30,7 @@ const AboutSection = () => {
               i18n={i18n}
               i18nKey="about_parag_5"
               components={{
-                GameLink: <TextLinkMarker to="/projects/games/forsaken-dawn" />,
+                GameLink: <TextLinkMarker to="/games/forsaken-dawn" />,
               }}
             />
           </TextPlain>

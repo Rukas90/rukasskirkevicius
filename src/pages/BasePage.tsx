@@ -5,7 +5,7 @@ const BasePage = () => {
   return (
     <MainContainer>
       <TopNav />
-      <main>
+      <main className="grow">
         <ContentContainer>
           <Outlet />
         </ContentContainer>

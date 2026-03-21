@@ -1,4 +1,4 @@
-import { Line } from "@components"
+import { ImagePicture, Line } from "@components"
 import ContactForm from "@components/ContactForm"
 import { useTranslation } from "react-i18next"
 
@@ -6,11 +6,11 @@ const Contact = () => {
   const { t } = useTranslation()
 
   return (
-    <div className="inline-flex w-full p-8">
-      <div className="w-1/3 min-h-full p-8">
+    <div className="flex w-full lg:p-8 p-0">
+      <div className="lg:block hidden w-1/3 min-h-full p-8">
         <div className="overflow-hidden rounded-md flex h-full shine">
-          <img
-            src="src/assets/img/screens/Screenshot_431.png"
+          <ImagePicture
+            path="/img/projects/forsaken-dawn/banner"
             className="w-full h-full object-cover bg-stone-200"
           />
         </div>
@@ -23,5 +23,6 @@ const Contact = () => {
       </div>
     </div>
   )
+  // TODO: Add error and email sent UI
 }
 export default Contact

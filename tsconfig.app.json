@@ -31,6 +31,10 @@
       "@hooks/*": ["src/hooks/*"],
       "@types": ["src/types/index.ts"],
       "@types/*": ["src/types/*"],
+      "@projects": ["src/projects/index.ts"],
+      "@projects/*": ["src/projects/*"],
+      "@utils": ["src/utils/index.ts"],
+      "@utils/*": ["src/utils/*"],
     },
   },
   "include": ["src"]
