@@ -63,7 +63,7 @@ const Dropdown = <TRef extends HTMLElement>({
   }
   const closeMenu = () => setShowing(false)
 
-  const handleClickAway = (e: MouseEvent) => {
+  const handleClickAway = (e: MouseEvent | TouchEvent) => {
     if (
       activatorRef.current &&
       !activatorRef.current.contains(e.target as Node) &&
@@ -87,18 +87,22 @@ const Dropdown = <TRef extends HTMLElement>({
 
     setTimeout(() => {
       document.addEventListener("mousedown", handleClickAway)
+      document.addEventListener("touchstart", handleClickAway)
       document.addEventListener("keydown", handleEscape)
       window.addEventListener("resize", updatePosition)
       window.addEventListener("blur", closeMenu)
+      window.addEventListener("scroll", updatePosition, { capture: true })
     }, 0)
 
     return () => {
       document.removeEventListener("mousedown", handleClickAway)
+      document.removeEventListener("touchstart", handleClickAway)
       document.removeEventListener("keydown", handleEscape)
       window.removeEventListener("resize", updatePosition)
       window.removeEventListener("blur", closeMenu)
+      window.removeEventListener("scroll", updatePosition, { capture: true })
     }
-  }, [showing])
+  }, [showing, updatePosition])
 
   const toggleMenu = () => setShowing((prev) => !prev)
 
