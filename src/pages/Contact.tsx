@@ -15,7 +15,7 @@ const Contact = () => {
           />
         </div>
       </div>
-      <div className="grow h-full px-4 py-8">
+      <div className="w-full h-full px-4 py-8">
         <p className="font-medium text-2xl ">{t("contact_me")}</p>
         <p className="text-stone-600">{t("contact_sub")}</p>
         <Line className="my-6" />

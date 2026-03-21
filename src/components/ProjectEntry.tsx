@@ -37,7 +37,7 @@ const ProjectEntry = ({
         className="relative text-2xl font-medium"
       >
         {startDate && (
-          <span className="absolute text-base font-semibold align-super ml-1.25">
+          <span className="text-base font-semibold align-super ml-1.25">
             {formatDate(startDate, endDate)}
           </span>
         )}

@@ -67,14 +67,17 @@ const ContactForm = ({ onSuccess, onError }: ContactFormProps) => {
         className="min-h-20 h-26 max-h-64"
         required
       />
-      <div className="flex justify-between">
+      <div className="flex sm:flex-row sm:gap-0 gap-4 flex-col justify-between sm:items-start items-center">
         <HCaptcha
           sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
           size="normal"
           reCaptchaCompat={false}
           ref={captchaRef}
         />
-        <ButtonSubmit type="submit" className="ml-auto mb-auto">
+        <ButtonSubmit
+          type="submit"
+          className="ml-auto mb-auto sm:w-auto w-full"
+        >
           {t("send")}
         </ButtonSubmit>
       </div>
