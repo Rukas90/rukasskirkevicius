@@ -17,10 +17,14 @@ export const DataDrivenItemsProject: Project = {
     },
     {
       type: "Summary",
-      info: "A modular item architecture built around composable data components, attributes and action events. Items are constructed by combining components rather than inheriting from rigid class hierarchies, allowing flexible item creation without code changes.",
+      info: {
+        localeKey: "dd_items_summary",
+        fallback:
+          "A modular item architecture built around composable data components, attributes and action events. Items are constructed by combining components rather than inheriting from rigid class hierarchies, allowing flexible item creation without code changes.",
+      },
     },
     {
-      type: "KeySoftware",
+      type: "TechStack",
       info: "Unity",
     },
   ],
@@ -42,10 +46,14 @@ export const InputsHandlerProject: Project = {
     },
     {
       type: "Summary",
-      info: "A group and layer based input management system that eliminates scattered input checks throughout the codebase. Only one group is active at a time, with layers activating based on pre-defined validation rules, preventing input conflicts as the game scales.",
+      info: {
+        localeKey: "inputs_handler_summary",
+        fallback:
+          "A group and layer based input management system that eliminates scattered input checks throughout the codebase. Only one group is active at a time, with layers activating based on pre-defined validation rules, preventing input conflicts as the game scales.",
+      },
     },
     {
-      type: "KeySoftware",
+      type: "TechStack",
       info: "Unity",
     },
   ],
@@ -68,10 +76,14 @@ export const ModularSaveLoadProject: Project = {
     },
     {
       type: "Summary",
-      info: "A component-based persistence system built around a Saveable middleware component. Each persistable component manages its own save logic independently, with scene-persistent GUIDs ensuring saved state survives prefab changes.",
+      info: {
+        localeKey: "save_load_summary",
+        fallback:
+          "A component-based persistence system built around a Saveable middleware component. Each persistable component manages its own save logic independently, with scene-persistent GUIDs ensuring saved state survives prefab changes.",
+      },
     },
     {
-      type: "KeySoftware",
+      type: "TechStack",
       info: "Unity",
     },
   ],
@@ -94,10 +106,14 @@ export const OpenablesProject: Project = {
     },
     {
       type: "Summary",
-      info: "A flexible interactable system for openable objects, doors, cabinets, shelves. Supports direction-aware opening, connected objects for double doors, animation curves, and multi-point spatial audio with randomization.",
+      info: {
+        localeKey: "openables_summary",
+        fallback:
+          "A flexible interactable system for openable objects, doors, cabinets, shelves. Supports direction-aware opening, connected objects for double doors, animation curves, and multi-point spatial audio with randomization.",
+      },
     },
     {
-      type: "KeySoftware",
+      type: "TechStack",
       info: "Unity, C#",
     },
   ],

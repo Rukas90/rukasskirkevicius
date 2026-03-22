@@ -34,13 +34,13 @@ const Haunted = () => {
           )
         }
       />
-      <ProjectSectionText>Summary</ProjectSectionText>
+      <ProjectSectionText localeKey="summary" />
       <TextPlain>
         This project was part of an assignment to create a prototype game. I
         have chose to create a 3D first person zombie shooter, titled 'Haunted'.
         It was inspired by Left 4 Dead and .
       </TextPlain>
-      <ProjectSectionText>Key Features</ProjectSectionText>
+      <ProjectSectionText localeKey="key_features" />
       <TextPlain>
         These are the features that were implemented in the final prototype game
         version.
@@ -56,7 +56,7 @@ const Haunted = () => {
         <li>Functional main menu</li>
         <li>Map with objectives and an ending</li>
       </ListPlain>
-      <ProjectSectionText>UI Design</ProjectSectionText>
+      <ProjectSectionText localeKey="ui_design" />
       <div className="flex lg:flex-row flex-col gap-8">
         <p>
           <TextPlain>

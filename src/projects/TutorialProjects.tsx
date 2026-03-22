@@ -37,7 +37,7 @@ export const OptimizationProject: Project = {
   },
   title: "Optimization Techniques",
   subtitle: {
-    localeKey: "quiz_game_sub",
+    localeKey: "optimization_sub",
     fallback: "Tutorial video on Unity optimization techniques",
   },
   details: [
@@ -59,7 +59,7 @@ export const FlashlightProject: Project = {
   },
   title: "Flashlight System",
   subtitle: {
-    localeKey: "quiz_game_sub",
+    localeKey: "flashlight_system_sub",
     fallback: "Tutorial video on implementing advanced flashlight in Unity",
   },
   details: [
@@ -81,7 +81,7 @@ export const LowPolyEnvironmentProject: Project = {
   },
   title: "Damage Indicators",
   subtitle: {
-    localeKey: "quiz_game_sub",
+    localeKey: "damage_indicators_sub",
     fallback: "Tutorial video on implementing damage indicators in Unity",
   },
   details: [

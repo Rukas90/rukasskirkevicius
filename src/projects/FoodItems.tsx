@@ -7,23 +7,27 @@ const FoodItemsProject: Project = {
   },
   title: "Food Items",
   subtitle: {
-    localeKey: "forsaken_dawn_sub",
+    localeKey: "food_items_sub",
     fallback: "Semi-realistic, detailed 3d props",
   },
   details: [
     {
       type: "Summary",
-      info: "These are props I have made for my new upcoming, currently in-development video game - Forsaken Dawn. All product designs are made by me using Affinity Photo and finilized in Substance Painter. Moreover, all prop models are very low poly and all the details are baked from their high poly meshes in Substance.",
+      info: {
+        localeKey: "food_items_summary",
+        fallback:
+          "These are props I have made for my new upcoming, currently in-development video game - Forsaken Dawn. All product designs are made by me using Affinity Photo and finilized in Substance Painter. Moreover, all prop models are very low poly and all the details are baked from their high poly meshes in Substance.",
+      },
     },
     {
-      type: "KeySoftware",
+      type: "TechStack",
       info: "Blender, Adobe Substance 3D Painter, Affinity Photo 2, Unity",
     },
   ],
   afterLink: {
     label: {
       localeKey: "view_on_artstation",
-      fallback: "View on Artstation",
+      fallback: "View on ArtStation",
     },
     url: "https://www.artstation.com/artwork/XJQRW3",
     target: "_blank",

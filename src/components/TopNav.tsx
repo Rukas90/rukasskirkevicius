@@ -5,6 +5,7 @@ import { ButtonBasic, IconDocument, Line } from "@components"
 import { useState } from "react"
 import useIsCollapsed from "@hooks/useIsCollapsed"
 import clsx from "clsx"
+import Resume from "/Rukas_Skirkevicius_Game_Developer_Resume.pdf"
 
 const TopNav = () => {
   const { t } = useTranslation()
@@ -20,9 +21,11 @@ const TopNav = () => {
         <p className="text-center text-stone-500 font-normal">
           {t("top_headline")}
         </p>
-        <ButtonBasic className="mt-2 inline-flex gap-0.5 pl-2!">
-          <IconDocument className="size-6 text-stone-500" /> {t("resume")}
-        </ButtonBasic>
+        <a href={Resume} target="_blank">
+          <ButtonBasic className="mt-2 inline-flex gap-0.5 pl-2!">
+            <IconDocument className="size-6 text-stone-500" /> {t("resume")}
+          </ButtonBasic>
+        </a>
         <div className="w-16 h-px bg-stone-300 mx-auto my-4" />
         <div
           className={clsx(

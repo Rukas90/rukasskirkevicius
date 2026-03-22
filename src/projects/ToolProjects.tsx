@@ -33,7 +33,7 @@ export const PixelHarmonyProject: Project = {
       localeKey: "learn_more",
       fallback: "Learn more",
     },
-    url: "/tools/pixel-harmony",
+    url: "/projects/pixel-harmony",
   },
 }
 
@@ -70,6 +70,6 @@ export const LocalizationProject: Project = {
       localeKey: "learn_more",
       fallback: "Learn more",
     },
-    url: "/tools/pixel-harmony",
+    url: "/projects/localization",
   },
 }

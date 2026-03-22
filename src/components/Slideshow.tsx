@@ -78,8 +78,8 @@ const Slideshow = ({
         icon={<IconArrowDown />}
         onClick={viewNext}
       />
-      <div className="absolute flex justify-center gap-2.5 w-full py-5 bottom-0 opacity-25 group-hover:opacity-50 transition-opacity">
-        {Array.from({ length }).map((_, index) => (
+      <div className="absolute flex justify-center gap-2.5 w-full py-5 bottom-0 opacity-25 group-hover:opacity-75 transition-opacity">
+        {Array.from({ length: getFilesLength() }).map((_, index) => (
           <SlideshowDot
             key={index}
             index={index}

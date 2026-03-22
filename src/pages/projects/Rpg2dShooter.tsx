@@ -34,7 +34,7 @@ const Rpg2dShooter = () => {
           )
         }
       />
-      <ProjectSectionText>Summary</ProjectSectionText>
+      <ProjectSectionText localeKey="summary" />
       <TextPlain>
         This was an experimentational, hobby project, where I made an RPG 2D
         shooter game using Lua. The goal was to learn Lua and create a simple
@@ -44,7 +44,7 @@ const Rpg2dShooter = () => {
         </TextLinkMarker>{" "}
         engine, which is a game engine used to create 2D video games.
       </TextPlain>
-      <ProjectSectionText>Key Features</ProjectSectionText>
+      <ProjectSectionText localeKey="key_features" />
       <TextPlain>
         These are the features that were implemented into the final game.
       </TextPlain>
