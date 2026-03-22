@@ -65,11 +65,4 @@ export const LocalizationProject: Project = {
       info: "Unity, C#",
     },
   ],
-  afterLink: {
-    label: {
-      localeKey: "learn_more",
-      fallback: "Learn more",
-    },
-    url: "/projects/localization",
-  },
 }
