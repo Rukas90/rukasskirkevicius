@@ -9,7 +9,7 @@ const AboutSection = () => {
     <SectionContainer>
       <SectionText>{t("about_me")}</SectionText>
       <div className="flex md:flex-row flex-col gap-9">
-        <Logo className="relative md:w-34 w-full min-w-34 h-52 rounded-xl opacity-95 skew shine" />
+        <Logo className="relative md:w-34 w-full min-w-34 md:h-52 rounded-xl opacity-95 skew shine" />
         <p className="flex flex-col leading-7 break-after-column wrap-normal overflow-hidden justify-center text-justify">
           <TextPlain className="font-normal! mb-2">
             {t("about_parag_1")}

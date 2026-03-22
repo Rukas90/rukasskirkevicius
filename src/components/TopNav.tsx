@@ -37,7 +37,7 @@ const TopNav = () => {
               : "grid-rows-[1fr]",
           )}
         >
-          <div className="overflow-hidden">
+          <div className="sm:overflow-visible overflow-hidden">
             <ul className="flex sm:flex-row flex-col gap-6 justify-center sm:items-start items-center text-sm uppercase">
               <NavItem to="/">{t("home")}</NavItem>
               <NavItem to="/projects">{t("projects")}</NavItem>
